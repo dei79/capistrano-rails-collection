@@ -1,6 +1,8 @@
 # Capistrano::Rails::Collection
 
-TODO: Write a gem description
+Rails specific task collection for Capistrano v3 as extension of the official capistrano rails gem:
+
+* cap deploy:seed
 
 ## Installation
 
