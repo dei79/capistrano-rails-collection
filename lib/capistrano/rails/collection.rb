@@ -1,9 +1,4 @@
+require 'capistrano/rails'
 require "capistrano/rails/collection/version"
+require "capistrano/rails/collection/db"
 
-module Capistrano
-  module Rails
-    module Collection
-      # Your code goes here...
-    end
-  end
-end
