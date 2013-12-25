@@ -1,5 +1,7 @@
 # Capistrano::Rails::Collection
 
+[![Gem Version](https://badge.fury.io/rb/capistrano-rails-collection.png)](http://badge.fury.io/rb/capistrano-rails-collection)
+
 Rails specific task collection for Capistrano v3 as extension of the official capistrano rails gem:
 
 * cap rails:rake:log:clear
