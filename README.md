@@ -2,14 +2,14 @@
 
 Rails specific task collection for Capistrano v3 as extension of the official capistrano rails gem:
 
-* cap rake:log:clear
-* cap rake:tmp:clear
-* cap rake:db:drop
-* cap rake:db:reset
-* cap rake:db:setup
-* cap rake:db:seed
-* cap rake:db:migrate
-* cap rake:db:rollback
+* cap rails:rake:log:clear
+* cap rails:rake:tmp:clear
+* cap rails:rake:db:drop
+* cap rails:rake:db:reset
+* cap rails:rake:db:setup
+* cap rails:rake:db:seed
+* cap rails:rake:db:migrate
+* cap rails:rake:db:rollback
 
 ## Installation
 
