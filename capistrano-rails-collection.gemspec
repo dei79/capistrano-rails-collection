@@ -5,7 +5,7 @@ require 'capistrano/rails/collection/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "capistrano-rails-collection"
-  spec.version       = Capistrano::Rails::Collection::VERSION
+  spec.version       = 0.0.1
   spec.authors       = ["dei79"]
   spec.email         = ["dirk.eisenberg@gmail.com"]
   spec.description   = %q{Rails specific Capistrano tasks which are not part of the official rails gem}
