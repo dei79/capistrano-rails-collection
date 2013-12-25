@@ -12,13 +12,17 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install capistrano-rails-collection
-
 ## Usage
 
-TODO: Write usage instructions here
+Require everything (bundler, rails/assets, rails/migrations and rails/collection)
+
+```ruby
+# Capfile
+require 'capistrano/rails'
+require 'capistrano/rails/collection'
+```
+
+Please note that any require should be placed in Capfile, not config/deploy.rb.
 
 ## Contributing
 
