@@ -2,7 +2,14 @@
 
 Rails specific task collection for Capistrano v3 as extension of the official capistrano rails gem:
 
-* cap deploy:seed
+* cap rake:log:clear
+* cap rake:tmp:clear
+* cap rake:db:drop
+* cap rake:db:reset
+* cap rake:db:setup
+* cap rake:db:seed
+* cap rake:db:migrate
+* cap rake:db:rollback
 
 ## Installation
 
@@ -16,11 +23,12 @@ And then execute:
 
 ## Usage
 
-Require everything (bundler, rails/assets, rails/migrations and rails/collection)
+This gem provides a collection of tasks for any Rails application. Make sure to use the `capistrano-rails` gem for deployment tasks.
+
+Require the whole collection of Rails tasks.
 
 ```ruby
 # Capfile
-require 'capistrano/rails'
 require 'capistrano/rails/collection'
 ```
 
