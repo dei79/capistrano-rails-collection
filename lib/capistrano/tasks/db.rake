@@ -4,7 +4,7 @@ namespace :rails do
       desc 'Drops the database to an empty state'
       task :drop do
         on primary :db do
-          within current_path do
+          within release_path do
             with rails_env: fetch(:stage) do
               execute :rake, 'db:drop'
             end
@@ -15,7 +15,7 @@ namespace :rails do
       desc 'Resets the database to an empty state'
       task :reset do
         on primary :db do
-          within current_path do
+          within release_path do
             with rails_env: fetch(:stage) do
               execute :rake, 'db:reset'
             end
@@ -29,7 +29,7 @@ namespace :rails do
         DESC
       task :setup do
         on primary :db do
-          within current_path do
+          within release_path do
             with rails_env: fetch(:stage) do
               execute :rake, 'db:setup'
             end
@@ -40,7 +40,7 @@ namespace :rails do
       desc "Load the seed data from db/seeds.rb"
       task :seed do
         on primary :db do
-          within current_path do
+          within release_path do
             with rails_env: fetch(:stage) do
               execute :rake, 'db:seed'
             end
@@ -51,7 +51,7 @@ namespace :rails do
       desc "Migrate the database"
       task :rollback do
         on primary :db do
-          within current_path do
+          within release_path do
             with rails_env: fetch(:stage) do
               execute :rake, 'db:migrate'
             end
@@ -62,7 +62,7 @@ namespace :rails do
       desc "Rolls the schema back to the previous version"
       task :rollback do
         on primary :db do
-          within current_path do
+          within release_path do
             with rails_env: fetch(:stage) do
               execute :rake, 'db:rollback'
             end
