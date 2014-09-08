@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "capistrano-rails-collection"
-  spec.version       = "0.0.2"
+  spec.version       = "0.0.3"
   spec.authors       = ["dei79"]
   spec.email         = ["dirk.eisenberg@gmail.com"]
   spec.description   = %q{Rails specific Capistrano tasks which are not part of the official rails gem}
