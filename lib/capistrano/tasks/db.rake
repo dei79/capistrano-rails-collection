@@ -49,7 +49,7 @@ namespace :rails do
       end
 
       desc "Migrate the database"
-      task :rollback do
+      task :migrate do
         on primary :db do
           within release_path do
             with rails_env: fetch(:stage) do
