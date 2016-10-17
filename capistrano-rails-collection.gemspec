@@ -1,10 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'capistrano-rails-collection'
 
 Gem::Specification.new do |spec|
   spec.name          = "capistrano-rails-collection"
-  spec.version       = "0.0.3"
+  spec.version       = CapistranoRailsCollection::VERSION
   spec.authors       = ["dei79"]
   spec.email         = ["dirk.eisenberg@gmail.com"]
   spec.description   = %q{Rails specific Capistrano tasks which are not part of the official rails gem}
