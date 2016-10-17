@@ -5,7 +5,7 @@ namespace :rails do
       task :drop do
         on primary :db do
           within release_path do
-            with rails_env: fetch(:stage) do
+            with rails_env: fetch(:rails_env) do
               execute :rake, 'db:drop'
             end
           end
@@ -16,7 +16,7 @@ namespace :rails do
       task :reset do
         on primary :db do
           within release_path do
-            with rails_env: fetch(:stage) do
+            with rails_env: fetch(:rails_env) do
               execute :rake, 'db:reset'
             end
           end
@@ -30,7 +30,7 @@ namespace :rails do
       task :setup do
         on primary :db do
           within release_path do
-            with rails_env: fetch(:stage) do
+            with rails_env: fetch(:rails_env) do
               execute :rake, 'db:setup'
             end
           end
@@ -41,7 +41,7 @@ namespace :rails do
       task :seed do
         on primary :db do
           within release_path do
-            with rails_env: fetch(:stage) do
+            with rails_env: fetch(:rails_env) do
               execute :rake, 'db:seed'
             end
           end
@@ -52,7 +52,7 @@ namespace :rails do
       task :migrate do
         on primary :db do
           within release_path do
-            with rails_env: fetch(:stage) do
+            with rails_env: fetch(:rails_env) do
               execute :rake, 'db:migrate'
             end
           end
@@ -63,7 +63,7 @@ namespace :rails do
       task :rollback do
         on primary :db do
           within release_path do
-            with rails_env: fetch(:stage) do
+            with rails_env: fetch(:rails_env) do
               execute :rake, 'db:rollback'
             end
           end
