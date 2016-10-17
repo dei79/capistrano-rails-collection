@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["dirk.eisenberg@gmail.com"]
   spec.description   = %q{Rails specific Capistrano tasks which are not part of the official rails gem}
   spec.summary       = %q{Rails specific Capistrano tasks which are not part of the official rails gem}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/dei79/capistrano-rails-collection"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -18,5 +18,5 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'capistrano-rails', '~> 1.1.0'
+  spec.add_dependency 'capistrano-rails', '~> 1.1'
 end
